@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ru.guroo.labs.hibernate.join.Entity">
+        <composite-id name="id" class="ru.guroo.labs.hibernate.join.EntityPk">
+            <key-many-to-one name="relatedEntity1" />
+            <key-many-to-one name="relatedEntity2" />
+        </composite-id>
+    </class>
+</hibernate-mapping>
